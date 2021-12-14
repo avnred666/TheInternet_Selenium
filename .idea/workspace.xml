@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d6308b0-dde8-4a77-8514-809af7d52124" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hover/HoverTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="TestNG.ForgotPasswordTests.testForgotPasswordButtonText">
+  <component name="RunManager" selected="TestNG.HoverTests.testHoverLinkForUser1">
     <configuration name="BaseTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="base.BaseTests" />
       <module name="SeleniumFramework" />
@@ -91,6 +93,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HoverTests.testHoverLinkForUser1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hover.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hover" />
+      <option name="MAIN_CLASS_NAME" value="hover.HoverTests" />
+      <option name="METHOD_NAME" value="testHoverLinkForUser1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
@@ -111,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HoverTests.testHoverLinkForUser1" />
         <item itemvalue="TestNG.ForgotPasswordTests.testForgotPasswordButtonText" />
         <item itemvalue="TestNG.DropdownTests.testDropdownSelectedOption" />
         <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />

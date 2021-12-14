@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -18,6 +17,9 @@ public class HomePage {
 
     @FindBy(linkText = "Forgot Password")
     private WebElement forgotPasswordLink;
+
+    @FindBy(linkText = "Hovers")
+    private WebElement hoversLink;
 
     public HomePage (WebDriver driver){
         this.driver = driver;
@@ -36,5 +38,10 @@ public class HomePage {
     public ForgotPasswordPage clickForgotPasswordLink(){
         forgotPasswordLink.click();
         return PageFactory.initElements(driver,ForgotPasswordPage.class);
+    }
+
+    public HoversPage clickHoversLink(){
+        hoversLink.click();
+        return PageFactory.initElements(driver,HoversPage.class);
     }
 }
