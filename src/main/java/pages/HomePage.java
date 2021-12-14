@@ -42,6 +42,9 @@ public class HomePage {
     @FindBy(linkText = "Frames")
     private WebElement framesLink;
 
+    @FindBy(linkText = "Dynamic Loading")
+    private WebElement dynamicLoadingLink;
+
     /**
      * Constructor initializes the local copy of driver to the one passed from previous page/class
      * @param driver
@@ -97,5 +100,10 @@ public class HomePage {
     public FramesPage clickFramesLink(){
         framesLink.click();
         return PageFactory.initElements(driver,FramesPage.class);
+    }
+
+    public DynamicLoadingPage clickDynamicLoadingLink(){
+        dynamicLoadingLink.click();
+        return PageFactory.initElements(driver,DynamicLoadingPage.class);
     }
 }

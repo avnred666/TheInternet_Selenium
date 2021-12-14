@@ -30,6 +30,4 @@ public class FrameTests extends BaseTests {
         assertEquals(nestedFramesPage.getLeftFrameText(),"LEFT","Text incorrect for left frame");
         assertEquals(nestedFramesPage.getBottomFrameText(),"BOTTOM","Text incorrect for bottom frame");
     }
-
-
 }
