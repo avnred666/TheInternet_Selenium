@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d6308b0-dde8-4a77-8514-809af7d52124" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/keys/KeyPressesTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/JavaScriptAlertsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HoversPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +51,18 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="TestNG.KeyPressesTests.testKeyPress">
-    <configuration name="DropdownTests.testDropdownSelectedOption" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AlertsTests.testJSConfirm">
+    <configuration name="AlertsTests.testJSAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dropdown.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dropdown" />
-      <option name="MAIN_CLASS_NAME" value="dropdown.DropdownTests" />
-      <option name="METHOD_NAME" value="testDropdownSelectedOption" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTests" />
+      <option name="METHOD_NAME" value="testJSAlert" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -72,17 +70,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForgotPasswordTests.testForgotPasswordButtonText" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertsTests.testJSConfirm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="forgotpassword.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="forgotpassword" />
-      <option name="MAIN_CLASS_NAME" value="forgotpassword.ForgotPasswordTests" />
-      <option name="METHOD_NAME" value="testForgotPasswordButtonText" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTests" />
+      <option name="METHOD_NAME" value="testJSConfirm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertsTests.testJSPrompt" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alerts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTests" />
+      <option name="METHOD_NAME" value="testJSPrompt" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,31 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="login" />
-      <option name="MAIN_CLASS_NAME" value="login.LoginTests" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AlertsTests.testJSConfirm" />
+        <item itemvalue="TestNG.AlertsTests.testJSPrompt" />
+        <item itemvalue="TestNG.AlertsTests.testJSAlert" />
         <item itemvalue="TestNG.KeyPressesTests.testKeyPress" />
         <item itemvalue="TestNG.HoverTests.testHoverLinkForUser1" />
-        <item itemvalue="TestNG.ForgotPasswordTests.testForgotPasswordButtonText" />
-        <item itemvalue="TestNG.DropdownTests.testDropdownSelectedOption" />
-        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
       </list>
     </recent_temporary>
   </component>

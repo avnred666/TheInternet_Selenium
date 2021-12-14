@@ -30,6 +30,9 @@ public class HomePage {
     @FindBy(linkText = "Key Presses")
     private WebElement keyPressesLink;
 
+    @FindBy(linkText = "JavaScript Alerts")
+    private WebElement jsAlertsLink;
+
     /**
      * Constructor initializes the local copy of driver to the one passed from previous page/class
      * @param driver
@@ -65,5 +68,10 @@ public class HomePage {
     public KeyPressesPage clickKeyPressesLink(){
         keyPressesLink.click();
         return PageFactory.initElements(driver,KeyPressesPage.class);
+    }
+
+    public JavaScriptAlertsPage clickJSAlertsLink(){
+        jsAlertsLink.click();
+        return PageFactory.initElements(driver,JavaScriptAlertsPage.class);
     }
 }
