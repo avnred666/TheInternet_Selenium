@@ -36,6 +36,12 @@ public class HomePage {
     @FindBy(linkText = "File Upload")
     private WebElement fileUploadLink;
 
+    @FindBy(linkText = "WYSIWYG Editor")
+    private WebElement wysiwygEditorLink;
+
+    @FindBy(linkText = "Frames")
+    private WebElement framesLink;
+
     /**
      * Constructor initializes the local copy of driver to the one passed from previous page/class
      * @param driver
@@ -81,5 +87,15 @@ public class HomePage {
     public FileUploadPage clickFileUploadLink(){
         fileUploadLink.click();
         return PageFactory.initElements(driver,FileUploadPage.class);
+    }
+
+    public WysiwygEditorPage clickWysiwygEditorLink(){
+        wysiwygEditorLink.click();
+        return PageFactory.initElements(driver,WysiwygEditorPage.class);
+    }
+
+    public FramesPage clickFramesLink(){
+        framesLink.click();
+        return PageFactory.initElements(driver,FramesPage.class);
     }
 }
