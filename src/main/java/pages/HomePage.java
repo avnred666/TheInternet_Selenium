@@ -33,6 +33,9 @@ public class HomePage {
     @FindBy(linkText = "JavaScript Alerts")
     private WebElement jsAlertsLink;
 
+    @FindBy(linkText = "File Upload")
+    private WebElement fileUploadLink;
+
     /**
      * Constructor initializes the local copy of driver to the one passed from previous page/class
      * @param driver
@@ -73,5 +76,10 @@ public class HomePage {
     public JavaScriptAlertsPage clickJSAlertsLink(){
         jsAlertsLink.click();
         return PageFactory.initElements(driver,JavaScriptAlertsPage.class);
+    }
+
+    public FileUploadPage clickFileUploadLink(){
+        fileUploadLink.click();
+        return PageFactory.initElements(driver,FileUploadPage.class);
     }
 }
