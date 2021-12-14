@@ -18,6 +18,11 @@ public class DropdownPage {
         this.driver = driver;
     }
 
+    /**
+     * Select class provided by Selenium support package is required to access dropdown lists
+     * @param option
+     */
+
     public void selectFromDropdown(String option){
         Select dropdownElement = new Select(dropdownBox);
         dropdownElement.selectByVisibleText(option);
@@ -25,6 +30,7 @@ public class DropdownPage {
 
     public List<String> findSelectedOption(){
         Select dropdownElement = new Select(dropdownBox);
+        /*Get all selected options of the dropdown > Convert to Stream > Map it to element text > collect as a string list*/
         return dropdownElement.getAllSelectedOptions().stream().map(e->e.getText()).collect(Collectors.toList());
     }
 

@@ -21,6 +21,7 @@ public class HoversPage {
     }
 
     public Captions hoverOverBoxIndex(int index){
+        /*Use Actions class moveToElement method to hover over an element. Perform method is required to perform the action*/
         Actions actions = new Actions(driver);
         actions.moveToElement(figureBoxes.get(index-1)).perform();
         return new Captions(boxCaption);
