@@ -45,6 +45,11 @@ public class HomePage {
     @FindBy(linkText = "Dynamic Loading")
     private WebElement dynamicLoadingLink;
 
+    @FindBy(linkText = "Multiple Windows")
+    private WebElement multipleWindowsLink;
+
+
+
     /**
      * Constructor initializes the local copy of driver to the one passed from previous page/class
      * @param driver
@@ -105,5 +110,10 @@ public class HomePage {
     public DynamicLoadingPage clickDynamicLoadingLink(){
         dynamicLoadingLink.click();
         return PageFactory.initElements(driver,DynamicLoadingPage.class);
+    }
+
+    public MultipleWindowsPage clickMultipleWindows() {
+        multipleWindowsLink.click();
+        return PageFactory.initElements(driver,MultipleWindowsPage.class);
     }
 }
