@@ -4,6 +4,7 @@ import base.BaseTests;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.DropdownPage;
 
 import java.util.List;
@@ -19,8 +20,10 @@ public class DropdownTests extends BaseTests {
         DropdownPage dropdownPage = homePage.clickDropdownLink();
         dropdownPage.selectFromDropdown(option);
         List<String> selectedOptions = dropdownPage.findSelectedOption();
-        assertEquals(selectedOptions.size(),1,"Incorrect number of options selected");
-        assertTrue(selectedOptions.contains(option),"Incorrect option selected!");
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(selectedOptions.size(),1,"Incorrect number of options selected");
+        softAssert.assertTrue(selectedOptions.contains(option),"Incorrect option selected!");
+        softAssert.assertAll();
     }
 
     @Test

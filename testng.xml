@@ -14,6 +14,12 @@
                     <include name = "testFileUpload"/>
                 </methods>
             </class>
+            <class name= "dropdown.DropdownTests">
+                <methods>
+                    <include name = "testDropdownSelectedOption"/>
+                    <include name = "testDropdownMultiSelect"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
