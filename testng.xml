@@ -20,6 +20,11 @@
                     <include name = "testDropdownMultiSelect"/>
                 </methods>
             </class>
+            <class name= "login.LoginTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
