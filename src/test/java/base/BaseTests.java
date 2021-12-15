@@ -6,6 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -23,11 +24,18 @@ public class BaseTests {
     public void setUp(){
         String fileDirectory = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver",fileDirectory+"/src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver",fileDirectory+"/src/main/resources/geckodriver.exe");
     }
 
     @BeforeMethod
-    public void openBrowser(){
-        driver = new ChromeDriver(setChromeOptions());
+    @Parameters("BrowserType")
+    public void openBrowser(String browserType){
+        switch (browserType){
+            case "Chrome":  driver = new ChromeDriver(setChromeOptions());
+                            break;
+            case "Firefox": driver = new FirefoxDriver();
+                            break;
+        }
         driver.get("https://the-internet.herokuapp.com/");
         driver.manage().window().maximize();
 

@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Automation University Suite" verbose="1" parallel="classes" thread-count="2">
     <test name="Testing Alerts and Popups">
+        <parameter name = "BrowserType" value = "Chrome"/>
         <classes>
             <class name= "alerts.AlertsTests">
                 <methods>

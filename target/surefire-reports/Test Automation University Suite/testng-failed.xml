@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Test Automation University Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="classes" name="Testing Alerts and Popups(failed)" verbose="0">
+    <parameter name="BrowserType" value="Firefox"/>
+    <classes>
+      <class name="dropdown.DropdownTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testDropdownSelectedOption"/>
+          <include name="testDropdownMultiSelect"/>
+          <include name="recordScreenshot"/>
+          <include name="setUp"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- dropdown.DropdownTests -->
+      <class name="login.LoginTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testSuccessfulLogin"/>
+          <include name="recordScreenshot"/>
+          <include name="setUp"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- login.LoginTests -->
+      <class name="alerts.AlertsTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testJSConfirm"/>
+          <include name="recordScreenshot"/>
+          <include name="setUp"/>
+          <include name="testJSAlert"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- alerts.AlertsTests -->
+      <class name="alerts.FileUploadTests">
+        <methods>
+          <include name="testFileUpload"/>
+          <include name="closeBrowser"/>
+          <include name="recordScreenshot"/>
+          <include name="setUp"/>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- alerts.FileUploadTests -->
+    </classes>
+  </test> <!-- Testing Alerts and Popups(failed) -->
+</suite> <!-- Failed suite [Test Automation University Suite] -->
