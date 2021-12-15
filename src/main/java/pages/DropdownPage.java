@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,11 @@ public class DropdownPage {
         Select dropdownElement = new Select(dropdownBox);
         /*Get all selected options of the dropdown > Convert to Stream > Map it to element text > collect as a string list*/
         return dropdownElement.getAllSelectedOptions().stream().map(e->e.getText()).collect(Collectors.toList());
+    }
+
+    public void changeDropdownToMultiselect(){
+        String script = "arguments[0].setAttribute('multiple','')";
+        ((JavascriptExecutor)driver).executeScript(script,dropdownBox);
     }
 
 }

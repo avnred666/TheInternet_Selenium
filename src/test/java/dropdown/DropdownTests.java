@@ -1,6 +1,8 @@
 package dropdown;
 
 import base.BaseTests;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pages.DropdownPage;
 
@@ -19,5 +21,17 @@ public class DropdownTests extends BaseTests {
         List<String> selectedOptions = dropdownPage.findSelectedOption();
         assertEquals(selectedOptions.size(),1,"Incorrect number of options selected");
         assertTrue(selectedOptions.contains(option),"Incorrect option selected!");
+    }
+
+    @Test
+    public void testDropdownMultiSelect(){
+        String option1 = "Option 1";
+        String option2 = "Option 2";
+        DropdownPage dropdownPage = homePage.clickDropdownLink();
+        dropdownPage.changeDropdownToMultiselect();
+        dropdownPage.selectFromDropdown(option1);
+        dropdownPage.selectFromDropdown(option2);
+        List<String> selectedOptions = dropdownPage.findSelectedOption();
+        assertEquals(selectedOptions.size(), 2, "Number of selected items");
     }
 }
