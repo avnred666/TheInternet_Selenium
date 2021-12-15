@@ -15,7 +15,7 @@ public class AlertsTests extends BaseTests {
         assertEquals(javascriptAlertsPage.resultOnPage(),"You successfully clicked an alert","Incorrect message displayed");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testJSAlert"})
     public void testJSConfirm(){
         var javascriptAlertsPage = homePage.clickJSAlertsLink();
         javascriptAlertsPage.buttonJSConfirmClick();
@@ -23,7 +23,7 @@ public class AlertsTests extends BaseTests {
         assertEquals(javascriptAlertsPage.resultOnPage(),"You clicked: Cancel","Incorrect message displayed");
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testJSAlert","testJSConfirm"})
     public void testJSPrompt(){
         String text = "Hello!";
         var javascriptAlertsPage = homePage.clickJSAlertsLink();

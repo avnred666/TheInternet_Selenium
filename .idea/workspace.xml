@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d6308b0-dde8-4a77-8514-809af7d52124" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MultipleWindowsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/alerts/AlertsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" afterDir="false" />
     </list>
@@ -52,20 +51,20 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="TestNG.NavigationTests.testNavigator">
-    <configuration name="DropdownTests.testDropdownMultiSelect" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.D:/IdeaProjects/SeleniumFramework/testng.xml">
+    <configuration name="AlertsTests.testJSConfirm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dropdown.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dropdown" />
-      <option name="MAIN_CLASS_NAME" value="dropdown.DropdownTests" />
-      <option name="METHOD_NAME" value="testDropdownMultiSelect" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTests" />
+      <option name="METHOD_NAME" value="testJSConfirm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -73,18 +72,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPressesTests.testKeyPress" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/IdeaProjects/SeleniumFramework/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="keys.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="keys" />
-      <option name="MAIN_CLASS_NAME" value="keys.KeyPressesTests" />
-      <option name="METHOD_NAME" value="testKeyPress" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/IdeaProjects/SeleniumFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -127,31 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitTests.testDLExample2Page" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="wait.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="wait" />
-      <option name="MAIN_CLASS_NAME" value="wait.WaitTests" />
-      <option name="METHOD_NAME" value="testDLExample2Page" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/IdeaProjects/SeleniumFramework/testng.xml" />
+        <item itemvalue="TestNG.D:/IdeaProjects/SeleniumFramework/TestNG.xml" />
+        <item itemvalue="TestNG.AlertsTests.testJSConfirm" />
         <item itemvalue="TestNG.NavigationTests.testNavigator" />
         <item itemvalue="TestNG.NavigationTests.testSwitchTab" />
-        <item itemvalue="TestNG.KeyPressesTests.testKeyPress" />
-        <item itemvalue="TestNG.DropdownTests.testDropdownMultiSelect" />
-        <item itemvalue="TestNG.WaitTests.testDLExample2Page" />
       </list>
     </recent_temporary>
   </component>

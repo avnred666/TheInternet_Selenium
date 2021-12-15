@@ -8,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import pages.HomePage;
 import utils.WindowManager;
 
@@ -21,11 +19,14 @@ public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp(){
         String fileDirectory = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver",fileDirectory+"/src/main/resources/chromedriver.exe");
+    }
 
+    @BeforeMethod
+    public void openBrowser(){
         driver = new ChromeDriver(setChromeOptions());
         driver.get("https://the-internet.herokuapp.com/");
         driver.manage().window().maximize();
@@ -33,9 +34,14 @@ public class BaseTests {
         homePage = PageFactory.initElements(driver,HomePage.class);
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown(){
         driver.quit();
+    }
+
+    @AfterMethod
+    public void closeBrowser(){
+        driver.close();;
     }
 
     @AfterMethod
