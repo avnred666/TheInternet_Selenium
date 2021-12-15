@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Automation University Suite" verbose="1" parallel="classes" thread-count="2">
-    <test name="Testing Alerts and Popups">
-        <parameter name = "BrowserType" value = "Chrome"/>
+<!--<suite name="Test Automation University Suite">-->
+    <test name="Testing The Internet">
+<!--        <parameter name = "BrowserType" value = "Firefox"/>-->
         <classes>
             <class name= "alerts.AlertsTests">
                 <methods>

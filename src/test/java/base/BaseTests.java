@@ -28,18 +28,24 @@ public class BaseTests {
     }
 
     @BeforeMethod
-    @Parameters("BrowserType")
-    public void openBrowser(String browserType){
-        switch (browserType){
-            case "Chrome":  driver = new ChromeDriver(setChromeOptions());
-                            break;
-            case "Firefox": driver = new FirefoxDriver();
-                            break;
-        }
+//    @Parameters("BrowserType")
+    public void openBrowser(){
+        String browser = System.getProperty("browser");
+        if(browser != "" && browser != null) {
+            if(browser.equalsIgnoreCase("Chrome")) {
+                driver = new ChromeDriver(setChromeOptions());
+            }
+            else if(browser.equalsIgnoreCase("Firefox")) {
+                driver = new FirefoxDriver();
+            }
+            else{
+                driver = new ChromeDriver();
+            }
         driver.get("https://the-internet.herokuapp.com/");
         driver.manage().window().maximize();
 
         homePage = PageFactory.initElements(driver,HomePage.class);
+        }
     }
 
     @AfterSuite
@@ -47,13 +53,13 @@ public class BaseTests {
         driver.quit();
     }
 
-    @AfterMethod
-    public void closeBrowser(){
-        driver.close();;
+
+    private void closeBrowser(){
+        driver.quit();
     }
 
     @AfterMethod
-    public void recordScreenshot(ITestResult result){
+    public void recordScreenshotandQuit(ITestResult result){
         String fileDirectory = System.getProperty("user.dir");
         if (ITestResult.FAILURE == result.getStatus()){
             var camera = (TakesScreenshot)driver;
@@ -65,6 +71,7 @@ public class BaseTests {
                 e.printStackTrace();
             }
         }
+        closeBrowser();
     }
 
     public WindowManager getWindowManager(){
